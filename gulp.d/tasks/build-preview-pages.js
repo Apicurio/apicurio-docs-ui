@@ -37,7 +37,7 @@ module.exports = (src, previewSrc, previewDest, sink = () => map()) => (done) =>
             uiModel.page = { ...uiModel.page }
             uiModel.siteRootPath = siteRootPath
             uiModel.siteRootUrl = path.join(siteRootPath, 'index.html')
-            uiModel.uiRootPath = path.join(siteRootPath, '_')
+            uiModel.uiRootPath = path.join(siteRootPath, 'assets')
             if (file.stem === '404') {
               uiModel.page = { layout: '404', title: 'Page Not Found' }
             } else {

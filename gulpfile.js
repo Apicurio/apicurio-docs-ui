@@ -10,7 +10,7 @@ const buildDir = 'build'
 const previewSrcDir = 'preview-src'
 const previewDestDir = 'public'
 const srcDir = 'src'
-const destDir = `${previewDestDir}/_`
+const destDir = `${previewDestDir}/assets`
 const { reload: livereload } = process.env.LIVERELOAD === 'true' ? require('gulp-connect') : {}
 const serverConfig = { host: '0.0.0.0', port: 5252, livereload }
 
