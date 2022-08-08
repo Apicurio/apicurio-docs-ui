@@ -6,7 +6,7 @@
 :url-project: https://gitlab.com/antora/antora-ui-default
 :url-preview: https://antora.gitlab.io/antora-ui-default
 :url-ci-pipelines: {url-project}/pipelines
-:img-ci-status: {url-project}/badges/master/pipeline.svg
+:img-ci-status: {url-project}/badges/main/pipeline.svg
 // External URLs:
 :url-antora: https://antora.org
 :url-antora-docs: https://docs.antora.org
