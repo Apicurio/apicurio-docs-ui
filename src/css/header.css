@@ -75,45 +75,8 @@ div.masthead-wrapper .masthead .menu a.active {
   color: #f2836b !important;
 }
 
-.github-corner:hover .octo-arm {
-  animation: octocat-wave 560ms ease-in-out;
-}
-
-@keyframes octocat-wave {
-  0%,
-  100% {
-    transform: rotate(0);
-  }
-
-  20%,
-  60% {
-    transform: rotate(-25deg);
-  }
-
-  40%,
-  80% {
-    transform: rotate(10deg);
-  }
-}
-
-@media (max-width: 500px) {
-  .github-corner:hover .octo-arm {
-    animation: none;
-  }
-
-  .github-corner .octo-arm {
-    animation: octocat-wave 560ms ease-in-out;
-  }
-}
-
-.masthead-header > a > svg {
-  fill: #fc0;
-  color: #151513;
+div.search-box {
   position: absolute;
-  border: 0;
-  right: 0;
-}
-
-.masthead-header > a > svg .octo-arm {
-  transform-origin: 130px 106px;
+  right: 30px;
+  top: 35px;
 }
