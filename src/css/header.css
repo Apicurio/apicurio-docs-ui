@@ -4,102 +4,118 @@ html.is-clipped--navbar {
 
 body {
   padding-top: var(--navbar-height);
+  font-family: "Open Sans",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.66666667;
+  color: #363636;
+  background-color: #fff;
 }
 
-#rhbar {
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
-  z-index: 4;
+div.masthead-wrapper {
+  width: 100%;
+  background-color: #231F20;
 }
 
-.masthead-header {
-  position: fixed;
-  top: 40px;
-  right: 0;
-  left: 0;
-  z-index: 4;
+div.masthead-wrapper .masthead {
+  width: 1180px;
   height: 96px;
-  line-height: 96px;
-  background-color: #22252c;
-  border-bottom: 1px solid #afb1b2;
-  color: #dcd7d7;
-  border-top: 1px solid #afb1b2;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  padding-right: 20px;
-  padding-left: 20px;
+  display: flex;
   margin-right: auto;
   margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
-.masthead-header .masthead-logo {
-  float: left;
+div.masthead-wrapper .masthead .logo-wrapper {
+  flex-grow: 0;
+  padding-top: 15px;
 }
 
-.masthead-header .masthead-brand {
-  height: 94px;
-  line-height: 94px;
-  float: left;
-  background-image: url(https://www.apicur.io/images/full-logo-banner.png);
-  background-repeat: no-repeat;
-  margin-left: 40px;
+div.masthead-wrapper .masthead .menu-wrapper {
+  flex-grow: 1;
+  align-items: end;
 }
 
-.masthead-header .masthead-brand a {
-  font-family: sans-serif;
-  color: transparent;
-  font-size: 56px;
-}
-
-.masthead-header .masthead-brand a:hover {
-  text-decoration: none;
-}
-
-.masthead-header .masthead-menu {
+div.masthead-wrapper .masthead .menu {
+  display: block;
+  box-shadow: none;
+  border: none;
   float: right;
-  height: 94px;
-}
-
-.masthead-header .masthead-menu ul {
+  background-color: transparent;
+  position: static;
   list-style: none;
   margin: 0;
+  margin-top: 35px;
   padding: 0;
+  text-align: center;
 }
 
-.masthead-header .masthead-menu ul li {
-  position: relative;
+div.masthead-wrapper .masthead .menu li {
   display: inline-block;
-  margin-left: 28px;
+}
+
+div.masthead-wrapper .masthead .menu a {
+  border: none;
+  padding: 20px 10px;
+  color: white;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 15px;
-  padding: 0;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  text-transform: uppercase;  
 }
 
-.masthead-header .masthead-menu ul li:last-child {
-  margin-left: 20px;
+div.masthead-wrapper .masthead .menu a.active {
+  font-weight: 800;
+  position: relative;
+  color: #F2836B !important;
 }
 
-.masthead-header .masthead-menu ul li a {
-  line-height: 94px;
-  color: inherit;
-  padding: 0;
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1180px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 980px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 760px;
+  }
 }
 
-.masthead-header .masthead-menu ul li a:hover {
-  color: #afb1b2;
+.main-nav * {
+  box-sizing: border-box;
+}
+
+.main-nav a, .main-nav a i, .main-nav span, .main-nav span i {
+  font-size: 15px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  line-height: 1.8rem;
+  text-transform: uppercase;
+  color: white !important;
+  font-weight: 600;
   text-decoration: none;
+  cursor: pointer;
 }
 
-.masthead-header .masthead-menu ul li a span.fa {
-  line-height: 94px;
-  font-size: 24px;
-  margin-right: 40px;
-  padding: 0;
+.main-nav .logo-wrapper {
+  display: inline-block;
+  padding-top: 0;
+  width: 30rem;
+  z-index: 0;
+  position: relative;
 }
 
-.masthead-header .masthead-menu > ul {
-  margin-right: 75px;
-}
 
 .github-corner:hover .octo-arm {
   animation: octocat-wave 560ms ease-in-out;
